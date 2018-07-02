@@ -26,7 +26,7 @@ namespace CSharTutorial
                 $" and is owned by {animalinfo.Owner}");
         }
 
-        public static void Main(string[] args)
+        public static void AulaSete(string[] args)
         {
             Animal2 whiskers = new Animal2()
             {
