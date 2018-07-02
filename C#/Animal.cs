@@ -15,13 +15,14 @@ namespace CSharTutorial
         public readonly int idNum;
 
 
-        public static void Main(string[] args)
+        public static void animal(string[] args)
         {
             Animal cat = new Animal();
             cat.SetName("Whiskers");
             cat.Sound = "Meow";
 
             Console.WriteLine($"The cat {cat.GetName()} says {cat.Sound}");
+            Console.WriteLine(Animal.NumOfAnimals);
             Console.ReadLine();
         }
 
