@@ -1,0 +1,103 @@
+<section>
+<article>
+  <h3>Ciclo de vida componente</h3>
+<app-ciclo></app-ciclo>
+</article><br><br>
+
+  <article>
+    <h3>input/output properties</h3>
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+
+
+  <contador [valor]="valorInicial"
+  (mudouValor)="onMudouValor($event)">
+
+  </contador>
+
+
+
+
+
+
+
+
+  </article>
+<br><br>
+
+
+
+
+  <article>
+    <h3>Interpolação</h3>
+    <p>string renderizada com interpolação: {{url}}</p>
+    <p>resultado de 1+1 é: {{1+1}}</p>
+    <p>resultado de 1+1 não é: {{1+1+ getValor() }}</p>
+    <p>{{getValor() && getCurtirCurso()}}</p>
+    <img src="{{urlImg}}" alt="">
+    <h4>property binding</h4>
+    <img [src]="urlImg" alt="">
+    <img bind-src="urlImg" alt="">
+    <!-- [] property binding,[] é syntax sugar {{intrpolação}} -->
+  </article>
+
+<br><br><br>
+
+<article>
+  <h3>class e style binding</h3>
+  <div>
+Selecione uma classe:
+  <select name="" id="" #classe (change)="0">
+    <option value="alert-success">success</option>
+    <option value="alert-info">info</option>
+    <option value="alert-warning">warning</option>
+    <option value="alert-danger">danger</option>
+  </select>
+  </div>
+<div class="alert {{classe.value}}" role="alert">Texto colorido</div>
+  <br><br>
+  <div class="alert " role="alert">
+  This is a primary alert—check it out!
+</div>
+<div class="alert " role="alert">
+  This is a secondary alert—check it out!
+</div>
+<div class="alert " role="alert"
+[class.alert-success]="classe.value=='alert-success'">
+  This is a success alert—check it out!
+</div>
+<div class="alert " role="alert" [style.diplay]="classe.value =='alert-danger' ? 'block' : 'none'">
+  This is a danger alert—check it out!
+</div>
+</article>
+
+<article>
+  <h3>Event binding</h3>
+  <div>
+    <button class="btn btn-primary" (click)="botaoClicado()">
+Me clique
+    </button>
+    <br>
+    <input type="text" (keyup)="onKeyUp($event)"
+    (keyup.enter)="salvarValor(campoInput.value)"
+    (blur)="salvarValor(campoInput.value)"
+    #campoInput />
+
+
+    <p>valor atual: {{valorAtual}}</p>
+    <p>valor salvo: {{valorSalvo}}</p>
+  </div>
+</article>
+<br><br>
+
+<article>
+  <h3>two way data binding</h3>
+  <div>
+    <input type="text" [value]="nome" (ngModelChange)="nome=$event">
+
+  <input type="text" [(ngModel)]="nome">
+
+    <p>voce digitou: {{nome}}</p>
+  </div>
+</article>
+</section>

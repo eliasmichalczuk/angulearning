@@ -1,0 +1,16 @@
+<section>
+  <article>
+    <h3>ngif</h3>
+    <div *ngIf="cursos.length > 0">Lista de cursos</div>
+
+  <div *ngIf="!mostrarCursos">Nao existem cursos</div>
+    <div *ngIf="mostrarCursos">Lista de cursos</div>
+
+  <button (click)="onMostrarCursos()">Mostrar ou esconder Cursos</button>
+<br><br>
+
+<h3>hidden como alternativa</h3>
+<div [hidden]="mostrarCursos">Nao existem cursos</div>
+  <div [hidden]="!mostrarCursos">Lista de cursos</div>
+  </article>
+</section>

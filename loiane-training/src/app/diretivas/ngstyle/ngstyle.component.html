@@ -1,0 +1,17 @@
+<section>
+  <article>
+    <h3>ngstyle</h3>
+    <button
+      [style.backgroundColor]="ativo ?  'blue':'black'"
+      (click)="mudarAtivo()"
+    >Mudar atributo</button>
+  </article>
+  <article>
+    <button
+      [ngStyle]="{
+        'backgroundColor': ativo ? 'blue' : 'gray'
+      }"
+      (click)="mudarAtivo()"
+    >Mudar atributo</button>
+  </article>
+</section>
