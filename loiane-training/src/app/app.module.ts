@@ -17,6 +17,9 @@ import { SwitchComponent } from './diretivas/switch/switch.component';
 import { NgClassComponent } from './diretivas/ng-class/ng-class.component';
 import { NgstyleComponent } from './diretivas/ngstyle/ngstyle.component';
 import { ElvisComponent } from './elvis/elvis.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomComponent } from './diretivas-custom/diretivas-custom.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,10 @@ import { ElvisComponent } from './elvis/elvis.component';
     SwitchComponent,
     NgClassComponent,
     NgstyleComponent,
-    ElvisComponent
+    ElvisComponent,
+    FundoAmareloDirective,
+    DiretivasCustomComponent,
+    HighlightMouseDirective
 
   ],
   imports: [
