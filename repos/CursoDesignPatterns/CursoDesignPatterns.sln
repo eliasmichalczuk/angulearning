@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoDesignPatterns", "Curs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConaBancaria", "ConaBancaria\ConaBancaria.csproj", "{F389D7E0-BFC7-4578-BA27-7D536A3BE08C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{70A3DC5F-EB13-4743-A064-DCE131BD4A84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns2", "DesignPatterns2\DesignPatterns2.csproj", "{02F15367-46D1-4D17-B7A0-5F9099D02BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F389D7E0-BFC7-4578-BA27-7D536A3BE08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F389D7E0-BFC7-4578-BA27-7D536A3BE08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F389D7E0-BFC7-4578-BA27-7D536A3BE08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A3DC5F-EB13-4743-A064-DCE131BD4A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A3DC5F-EB13-4743-A064-DCE131BD4A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A3DC5F-EB13-4743-A064-DCE131BD4A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A3DC5F-EB13-4743-A064-DCE131BD4A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02F15367-46D1-4D17-B7A0-5F9099D02BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F15367-46D1-4D17-B7A0-5F9099D02BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F15367-46D1-4D17-B7A0-5F9099D02BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F15367-46D1-4D17-B7A0-5F9099D02BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

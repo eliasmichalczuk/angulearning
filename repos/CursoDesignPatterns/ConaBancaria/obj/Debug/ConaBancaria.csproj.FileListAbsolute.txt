@@ -1,0 +1,7 @@
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\obj\Debug\ConaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\bin\Debug\ConaBancaria.exe.config
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\bin\Debug\ConaBancaria.exe
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\bin\Debug\ConaBancaria.pdb
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\obj\Debug\ConaBancaria.csprojAssemblyReference.cache
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\obj\Debug\ConaBancaria.exe
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\ConaBancaria\obj\Debug\ConaBancaria.pdb

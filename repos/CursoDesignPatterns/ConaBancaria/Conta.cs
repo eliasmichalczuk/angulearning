@@ -8,7 +8,7 @@
         public Conta(string titular, double saldo)
         {
             this.Titular = titular;
-            this.Saldo = saldo
+            this.Saldo = saldo;
         }
     }
 }

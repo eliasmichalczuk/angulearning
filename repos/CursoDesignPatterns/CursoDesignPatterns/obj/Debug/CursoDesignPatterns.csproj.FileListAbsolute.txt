@@ -5,3 +5,10 @@ C:\Users\08703076903\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\De
 C:\Users\08703076903\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.csproj.CoreCompileInputs.cache
 C:\Users\08703076903\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.exe
 C:\Users\08703076903\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.pdb
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\bin\Debug\CursoDesignPatterns.exe.config
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\bin\Debug\CursoDesignPatterns.exe
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\bin\Debug\CursoDesignPatterns.pdb
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.csprojAssemblyReference.cache
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.csproj.CoreCompileInputs.cache
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.exe
+C:\Users\silva.elias\source\repos\CursoDesignPatterns\CursoDesignPatterns\obj\Debug\CursoDesignPatterns.pdb
