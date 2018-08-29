@@ -35,10 +35,10 @@ namespace YouLearn.Domain.Services
             //cria entidade
             Usuario usuario = new Usuario(nome, email, request.Senha);
             //usuario.Nome.PrimeiroNome = "joao"; DONE: nao deve deixar alterar nome aqui
-            AddNotifications( usuario);
+            AddNotifications(usuario);
             if (usuario.Nome.PrimeiroNome.Length < 3 || usuario.Nome.PrimeiroNome.Length < 50)
             {
-               throw new System.Exception("primeiro nome deve conter entre 3 e 50");
+                throw new System.Exception("primeiro nome deve conter entre 3 e 50");
             }
 
 
@@ -75,12 +75,15 @@ namespace YouLearn.Domain.Services
                 AddNotification("Usuario", MSG.DADOS_NAO_ENCONTRADOS);
                 return null;
             }
-            var response = new AutenticarUsuarioResponse()
-            {
-                Id = usuario.Id,
-                PrimeiroNome = usuario.Nome.PrimeiroNome
-            };
-            return response;
+            //var response = new AutenticarUsuarioResponse()
+            //{
+            //    Id = usuario.Id,
+            //    PrimeiroNome = usuario.Nome.PrimeiroNome
+            //};
+            //return response;
+            //cast direto
+
+            return (AutenticarUsuarioResponse)usuario;
         }
     }
 }

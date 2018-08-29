@@ -3,7 +3,7 @@ using YouLearn.Domain.Entities.Base;
 
 namespace YouLearn.Domain.Entities
 {
-    class Video : EntityBase
+    public class Video : EntityBase
     {
         public Canal Canal { get; set; }
         public Playlist Playlist { get; set; }

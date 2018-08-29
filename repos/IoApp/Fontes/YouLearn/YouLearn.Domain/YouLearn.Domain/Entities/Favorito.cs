@@ -2,7 +2,7 @@
 
 namespace YouLearn.Domain.Entities
 {
-    class Favorito : EntityBase
+    public class Favorito : EntityBase
     {
         public Video Video { get; set; }
         public Usuario Usuario { get; set; }
