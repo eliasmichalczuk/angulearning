@@ -11,6 +11,7 @@ namespace MVC5Inicial.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            //codigo da regra de negocio
             return View();
         }
     }
