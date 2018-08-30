@@ -18,4 +18,3 @@ C:\Users\silva.elias\source\repos\study\repos\IoApp\Fontes\YouLearn\YouLearn.Dom
 C:\Users\silva.elias\source\repos\study\repos\IoApp\Fontes\YouLearn\YouLearn.Domain\YouLearn.Domain\bin\Debug\netcoreapp2.1\YouLearn.Domain.pdb
 C:\Users\silva.elias\source\repos\study\repos\IoApp\Fontes\YouLearn\YouLearn.Domain\YouLearn.Domain\obj\Debug\netcoreapp2.1\YouLearn.Domain.dll
 C:\Users\silva.elias\source\repos\study\repos\IoApp\Fontes\YouLearn\YouLearn.Domain\YouLearn.Domain\obj\Debug\netcoreapp2.1\YouLearn.Domain.pdb
-C:\Users\silva.elias\source\repos\study\repos\IoApp\Fontes\YouLearn\YouLearn.Domain\YouLearn.Domain\obj\Debug\netcoreapp2.1\YouLearn.Domain.csprojAssemblyReference.cache
