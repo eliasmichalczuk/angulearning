@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <form action="/Produto/Adiciona" method="post">
+            @Html.ValidationMessage("produto.Invalido")
+
+
+            <label for="nome">Nome:</label>
+            <input id="nome" name="produto.nome" value="@ViewBag.Produto.Nome"/>
+            @Html.ValidationMessage("produto.nome")
+            <label for="nome">Preço:</label>
+            <input id="preco" name="produto.preco" />
+            <label for="nome">Quantidade:</label>
+            <input id="quantidade" name="produto.quantidade" />
+            <label for="nome">descricao:</label>
+            <input id="descricao" name="produto.descricao" />
+            <label for="nome">categoria:</label>
+            @*<input id="categoria" name="produto.categoria" />*@
+            <select id="categoria" name="produto.CategoriaId">
+                @foreach (var categoria in ViewBag.Categorias)
+                {
+                    <option selected="@categoria.Id.Equals(ViewBag.Produto.CategoriaID)" 
+                            value="@categoria.Id">@categoria.Nome</option>
+
+                }
+            </select>
+
+            <input type="submit" value="Cadastrar" />
+        </form>
+    </div>
+</body>
+</html>

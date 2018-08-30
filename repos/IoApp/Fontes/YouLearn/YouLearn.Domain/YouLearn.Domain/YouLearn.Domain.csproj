@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\YouLearn.Shared\YouLearn.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Resources\Msg.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
