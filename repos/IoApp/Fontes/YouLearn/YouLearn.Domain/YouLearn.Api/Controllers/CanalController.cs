@@ -21,7 +21,14 @@ namespace YouLearn.Api.Controllers
         [Route("api/v1/CanalListar")]
         public async Task<IActionResult> Listar()
         {
+            try
+            {
+                Guid idUsuario = 
+            }
+            catch
+            {
 
+            }
         }
     }
 }

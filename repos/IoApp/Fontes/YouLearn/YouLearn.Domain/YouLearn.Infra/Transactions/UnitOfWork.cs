@@ -1,4 +1,4 @@
-﻿using YouLearn.Infra.Persistence.EF;
+﻿using YouLearn.Infra.Persistencia.EF;
 
 namespace YouLearn.Infra.Transactions
 {

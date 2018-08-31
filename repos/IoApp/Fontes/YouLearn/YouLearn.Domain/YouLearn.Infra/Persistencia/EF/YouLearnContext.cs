@@ -7,7 +7,7 @@ using YouLearn.Shared;
 
 namespace YouLearn.Infra.Persistencia.EF
 {
-    class YouLearnContext : DbContext
+    public class YouLearnContext : DbContext
     {
         public DbSet<Canal> Canais { get; set; }
         public DbSet<Playlist> Playlists { get; set; }
