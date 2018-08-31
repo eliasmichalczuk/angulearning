@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YouLearn.Infra", "YouLearn.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YouLearn.Shared", "YouLearn.Shared\YouLearn.Shared.csproj", "{ABDE64F0-4411-431A-816D-6A81ABBA4765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouLearn.Api", "YouLearn.Api\YouLearn.Api.csproj", "{22C11962-467B-4769-A717-3C2B50187A47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{ABDE64F0-4411-431A-816D-6A81ABBA4765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABDE64F0-4411-431A-816D-6A81ABBA4765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABDE64F0-4411-431A-816D-6A81ABBA4765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C11962-467B-4769-A717-3C2B50187A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C11962-467B-4769-A717-3C2B50187A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C11962-467B-4769-A717-3C2B50187A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C11962-467B-4769-A717-3C2B50187A47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
