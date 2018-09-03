@@ -23,6 +23,12 @@ namespace Alura.Filmes.App.Dados
                 .HasDefaultValueSql("getDate()");
 
             builder.HasKey("film_id", "actor_id");
+
+            builder
+                .HasOne(fa => fa.Filme)
+                .WithMany(f => f.Atores)
+                .HasForeignKey("filme_id");
+
         }
     }
 
