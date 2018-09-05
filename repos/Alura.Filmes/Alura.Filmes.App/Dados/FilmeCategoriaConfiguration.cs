@@ -9,30 +9,29 @@ using System.Threading.Tasks;
 
 namespace Alura.Filmes.App.Dados
 {
-    class FilmeAtorConfiguration : IEntityTypeConfiguration<FilmeAtor>
+    class FilmeCategoriaConfiguration : IEntityTypeConfiguration<FilmeCategoria>
     {
-        public void Configure(EntityTypeBuilder<FilmeAtor> builder)
+        public void Configure(EntityTypeBuilder<FilmeCategoria> builder)
         {
-            builder.ToTable("film_actor");
+            builder.ToTable("film_category");
 
             builder.Property<int>("film_id").IsRequired();//nao precisa required pois int nao  
-            builder.Property<int>("actor_id").IsRequired(); //aceita valor nulo, mas fazer o que ne
+            builder.Property<int>("category_id").IsRequired(); //aceita valor nulo, mas fazer o que ne
 
             builder.Property<DateTime>("last_update")
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getDate()");
 
-            builder.HasKey("film_id", "actor_id");
+            builder.HasKey("film_id", "category_id");
 
             builder
-                .HasOne(fa => fa.Filme)
-                .WithMany(f => f.Atores)
+                .HasOne(fc => fc.Filme)
+                .WithMany(f => f.Categorias)
                 .HasForeignKey("filme_id");
-
             builder
-                .HasOne(fa => fa.Ator)
-                .WithMany(fa => fa.Filmografia)
-                .HasForeignKey("actor_id");
+                .HasOne(fc => fc.Categoria)
+                .WithMany(c => c.Filmes)
+                .HasForeignKey("category_id");
 
         }
     }

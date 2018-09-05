@@ -36,6 +36,7 @@ namespace Alura.Filmes.App
 
                 var filme = context.Filmes
                     .Include(f => f.Atores)//join com tabela atores
+                    .ThenInclude(fa => fa.Ator)
                     .First();
                 //aqui foi apenas criado lista de atores em filme, nao foi criado lista de filme em atores
                 //assim o ef core implicita que é relacionamento de muitos para 1
@@ -45,9 +46,9 @@ namespace Alura.Filmes.App
 
 
                 Console.WriteLine("Elenco: ");
-                foreach(var item in context.Atores)
+                foreach(var ator in filme.Atores)
                 {
-                    Console.WriteLine();
+                    Console.WriteLine(ator.Ator);
                 }
             }
         }

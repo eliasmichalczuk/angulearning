@@ -15,6 +15,11 @@ namespace Alura.Filmes.App.Negocio
     //string aceita null padrão clr
     public class Ator
     {
+        public Ator()
+        {
+            Filmografia = new List<FilmeAtor>();
+        }
+
         //[Column("actor_id")]
         public int Id { get; set; }
         //[Required]
@@ -23,7 +28,7 @@ namespace Alura.Filmes.App.Negocio
         //[Required]
         //[Column("last_name", TypeName = "varchar(45)")]
         public string UltimoNome { get; set; }
-
+        public IList<FilmeAtor> Filmografia { get; set; }
         public override string ToString()
         {
             return $"Ator ({Id}): {PrimeiroNome} {UltimoNome}";

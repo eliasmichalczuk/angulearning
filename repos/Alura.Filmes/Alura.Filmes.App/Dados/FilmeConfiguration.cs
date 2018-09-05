@@ -36,6 +36,18 @@ namespace Alura.Filmes.App.Dados
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getDate()")
                 .IsRequired();
+            builder
+                .Property<byte>("language_id");  //chave estrangeira de idioma falado
+            builder
+                .Property<byte?>("original_language_id");
+            builder
+                .HasOne(f => f.IdiomaFalado)              //criar propriedade de na navegação em idioma
+                .WithMany(i => i.FilmesFalados)
+                .HasForeignKey("language_id");
+            builder
+                .HasOne(f => f.IdiomaOriginal)    
+                .WithMany(i => i.FilmesOriginais)
+                .HasForeignKey("original_language_id");
         }
     }
 }
