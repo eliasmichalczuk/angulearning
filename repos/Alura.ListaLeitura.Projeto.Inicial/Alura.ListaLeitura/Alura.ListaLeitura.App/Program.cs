@@ -16,8 +16,6 @@ namespace Alura.ListaLeitura.App
                 .UseKestrel() //necessario informar o qual a implementação do servidor http
                 .UseStartup<Startup>()                //Preciso de classe que inicializa
                 .Build();
-            
-                
             host.Run();
 
 
