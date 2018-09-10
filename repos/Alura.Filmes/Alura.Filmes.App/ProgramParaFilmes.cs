@@ -9,7 +9,7 @@ namespace Alura.Filmes.App
 {
     class ProgramParaFilmes
     {
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             
             using(var context = new AluraFilmesContexto())

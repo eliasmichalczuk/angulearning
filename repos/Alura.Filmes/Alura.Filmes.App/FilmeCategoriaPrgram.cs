@@ -34,10 +34,8 @@ namespace Alura.Filmes.App
         //    }
         //}
 
-        public void Main(string[] args)
+        public void Main1(string[] args)
         {
-            byte? idade = null;
-
             using(var context = new AluraFilmesContexto())
             {
 

@@ -16,7 +16,7 @@ namespace Alura.Filmes.App.Dados
             builder.ToTable("film_category");
 
             builder.Property<int>("film_id").IsRequired();//nao precisa required pois int nao  
-            builder.Property<int>("category_id").IsRequired(); //aceita valor nulo, mas fazer o que ne
+            builder.Property<byte>("category_id").IsRequired(); //aceita valor nulo, mas fazer o que ne
 
             builder.Property<DateTime>("last_update")
                 .HasColumnType("datetime")

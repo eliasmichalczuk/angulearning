@@ -61,5 +61,14 @@ namespace AluraTunes
 
         //Com base nesse arquivo XML, qual alternativa representa a o código 
         //adequado para retornar uma lista contendo o Id e o Nome dos fabricantes? ^^ XMLFILE1 no projetos
+
+
+        /*
+         * var query = from nf in contexto.NotasFiscais
+            orderby nf.Total descending, nf.Cliente.PrimeiroNome + " " + nf.Cliente.Sobrenome
+            select nf;
+                .OrderByDescending(nf => nf.Total)
+    .ThenBy(nf => nf.Cliente.PrimeiroNome + " " + nf.Cliente.Sobrenome);
+         */
     }
 }
