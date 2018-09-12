@@ -1,6 +1,7 @@
 ﻿using Alura.Filmes.App.Dados;
 using Alura.Filmes.App.Extensions;
 using Alura.Filmes.App.Negocio;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,7 +68,29 @@ namespace Alura.Filmes.App
                     Console.WriteLine(func);
                 }
             }
+
+            using (var contexto = new AluraFilmesContexto())
+            {
+                contexto.LogSQLToConsole();
+
+                var atoresMaisAtuantes = contexto.Atores
+                                        .Include(a => a.Filmografia)
+                                        .OrderByDescending(a => a.Filmografia.Count)
+                                        .Take(5);
+
+                var sql = @"select top 5 a.first_name, a.last_name, count(*) as total
+                            from actor a
+                                inner join film_actor fa on fa.actor_id = a.actor_id
+                            group by a.first_name, a.last_name
+                            order by total desc";
+                atoresMaisAtuantes = contexto.Atores.FromSql(sql);
+
+                foreach (var ator in atoresMaisAtuantes)
+                {
+                    Console.WriteLine($"{ator.PrimeiroNome} {ator.Filmografia} filmes");
+                }
+            }
         }
     }
-    }
+    
 }
